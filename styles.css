@@ -222,6 +222,21 @@ input, select, textarea {
   gap: 0.85rem;
 }
 
+.brand-logo-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  flex-shrink: 0;
+  background: #ffffff;
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.08) rotate(4deg);
+}
+
 .logo-symbol {
   width: 44px;
   height: 44px;
@@ -255,6 +270,26 @@ input, select, textarea {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
+}
+
+.logo-title-accent {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 1.2px;
+  color: var(--accent-red);
+  background: none;
+  -webkit-text-fill-color: var(--accent-red);
+}
+
+.logo-slogan {
+  font-family: 'Noto Sans Devanagari', 'Nirmala UI', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  color: var(--accent-red);
+  line-height: 1.25;
+  margin-top: 1px;
+  display: block;
 }
 
 .logo-subtitle {
@@ -1933,6 +1968,90 @@ input, select, textarea {
   margin-bottom: 1.75rem;
 }
 
+.btn-directions-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--accent-red);
+  font-weight: 700;
+  font-size: 0.86rem;
+  margin-top: 0.45rem;
+  transition: all 0.2s ease;
+}
+
+.btn-directions-link:hover {
+  color: var(--accent-red-hover);
+  text-decoration: underline;
+  transform: translateX(3px);
+}
+
+/* Google Maps Interactive Card */
+.map-card-container {
+  margin-top: 3.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-red-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.map-header {
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border-red-light);
+  background: #fffafa;
+}
+
+.map-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.map-title-wrap i {
+  font-size: 1.8rem;
+  color: var(--accent-red);
+  flex-shrink: 0;
+}
+
+.map-title-wrap h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.15rem;
+}
+
+.map-title-wrap p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.btn-map-directions {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.map-iframe-wrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background: #f8fafc;
+}
+
+.map-iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 /* ==========================================================================
    FOOTER (DEEP CRIMSON/BURGUNDY SOLID BASE)
    ========================================================================== */
@@ -1954,6 +2073,15 @@ input, select, textarea {
   margin-bottom: 1.25rem;
 }
 
+.footer-logo-img {
+  width: 58px;
+  height: 58px;
+  background: #ffffff;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
 .footer-logo .logo-title {
   background: linear-gradient(90deg, #ffffff 0%, #fca5a5 100%);
   -webkit-background-clip: text;
@@ -1962,6 +2090,16 @@ input, select, textarea {
 
 .footer-logo .logo-subtitle {
   color: #f87171;
+}
+
+.footer-logo .logo-title-accent {
+  color: #fca5a5;
+  -webkit-text-fill-color: #fca5a5;
+}
+
+.footer-logo .logo-slogan {
+  color: #fca5a5;
+  font-size: 0.74rem;
 }
 
 .footer-text {
@@ -2013,6 +2151,18 @@ input, select, textarea {
 .footer-col ul li a:hover {
   color: #ffffff;
   padding-left: 4px;
+}
+
+.footer-address-mini {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin-bottom: 0.85rem;
+}
+
+.footer-address-mini i {
+  color: #f87171;
+  margin-right: 0.35rem;
 }
 
 .helpline-label {

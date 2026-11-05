@@ -61,7 +61,7 @@ Then visit: `http://localhost:8000`
 
 | Item to Change | File | Where to find |
 | :--- | :--- | :--- |
-| **Institute Phone Number** | `index.html` & `app.js` | Search for `+91 98765 43210` or `919876543210` and replace with your actual phone number. |
+| **Institute Phone Number** | `index.html` & `app.js` | Search for `+91 77373 26011` or `917737326011` and replace with your actual phone number. |
 | **Institute Address** | `index.html` | Under `#store-info` or `#contact` section. |
 | **Institute Email** | `index.html` | Search for `info@kinematicsclasses.com`. |
 | **Courses & Offerings** | `app.js` | Update the `COURSES_DATA` array at the top of `app.js`. |

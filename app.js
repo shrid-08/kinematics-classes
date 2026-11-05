@@ -167,36 +167,36 @@ const FACULTY_DATA = [
 
 const TOPPERS_DATA = [
   {
-    name: 'Akash Verma',
-    rank: 'AIR 142',
-    exam: 'JEE Advanced 2025',
-    college: 'IIT Delhi — Computer Science',
-    score: '318 / 360',
-    avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=200&auto=format&fit=crop'
+    name: 'Shivam',
+    rank: '98%ile',
+    exam: 'JEE Main',
+    college: 'Kinematics Star Achiever',
+    score: '98%',
+    avatar: 'achievers/shivam.jpeg'
   },
   {
-    name: 'Riddhi Aggarwal',
-    rank: 'AIR 89',
-    exam: 'NEET-UG 2025',
-    college: 'AIIMS New Delhi (MBBS)',
-    score: '715 / 720',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop'
+    name: 'Yash',
+    rank: '97%ile',
+    exam: 'JEE Main',
+    college: 'Kinematics Star Achiever',
+    score: '97%',
+    avatar: 'achievers/yash.jpeg'
   },
   {
-    name: 'Devansh Singhal',
-    rank: 'AIR 318',
-    exam: 'JEE Advanced 2025',
-    college: 'IIT Bombay — Electrical Engg.',
-    score: '298 / 360',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop'
+    name: 'Hridyansh',
+    rank: '96%ile',
+    exam: 'JEE Main',
+    college: 'Kinematics Star Achiever',
+    score: '96%',
+    avatar: 'achievers/hridyansh.jpeg'
   },
   {
-    name: 'Tanya Sanyal',
-    rank: 'State Rank 3',
-    exam: 'CBSE 12th & JEE (99.6%ile)',
-    college: '99.2% in Class 12th Boards',
-    score: '100/100 in Physics',
-    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop'
+    name: 'Shaurya',
+    rank: '95%ile',
+    exam: 'JEE Main',
+    college: 'Kinematics Star Achiever',
+    score: '95%',
+    avatar: 'achievers/shaurya.jpeg'
   }
 ];
 
@@ -246,8 +246,8 @@ function renderCourses(filter = 'all') {
   const container = document.getElementById('coursesGrid');
   if (!container) return;
 
-  const filtered = filter === 'all' 
-    ? COURSES_DATA 
+  const filtered = filter === 'all'
+    ? COURSES_DATA
     : COURSES_DATA.filter(c => c.category === filter);
 
   container.innerHTML = filtered.map(course => `
@@ -627,7 +627,7 @@ function handleCounselingSubmit(source = 'hero') {
   }
 
   // Build personalized WhatsApp Lead message
-  const institutePhone = '919876543210';
+  const institutePhone = '917737326011';
   const textMsg = `Hello Kinematics Classes!%0A%0AMy Name: *${encodeURIComponent(name)}*%0APhone: *${phone}*%0AInterested In: *${encodeURIComponent(courseOrClass)}*%0ALearning Mode: *${encodeURIComponent(mode)}*%0A%0APlease schedule my free counseling & demo session.`;
   const whatsappUrl = `https://wa.me/${institutePhone}?text=${textMsg}`;
 
@@ -656,7 +656,7 @@ function handleDemoModalSubmit() {
 
   closeDemoModal();
 
-  const institutePhone = '919876543210';
+  const institutePhone = '917737326011';
   const textMsg = `Hello Kinematics Classes!%0A%0A*Demo Class Booking Request*%0AStudent Name: *${encodeURIComponent(name)}*%0APhone: *${phone}*%0AClass: *${encodeURIComponent(currentClass)}*%0ASubject / Stream: *${encodeURIComponent(stream)}*%0APreferred Slot: *${encodeURIComponent(slot)}*%0A%0APlease confirm my 2-day trial pass!`;
   const whatsappUrl = `https://wa.me/${institutePhone}?text=${textMsg}`;
 
@@ -677,7 +677,7 @@ function handleDownloadSubmit() {
 
   closeDownloadModal();
 
-  const institutePhone = '919876543210';
+  const institutePhone = '917737326011';
   const textMsg = `Hi Kinematics Classes!%0A%0AMy Name: *${encodeURIComponent(name)}*%0APhone: *${phone}*%0AI requested the study material: *${encodeURIComponent(kit)}*.%0APlease share the PDF file.`;
   const whatsappUrl = `https://wa.me/${institutePhone}?text=${textMsg}`;
 
