@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinematics Classes | Premier Coaching for IIT-JEE, NEET & Foundations</title>
+  <meta name="description" content="Kinematics Classes is the leading coaching institute for IIT-JEE (Main & Advanced), NEET-UG, and Classes 8-12th Foundation & Boards. Learn from top IITian mentors." />
+  
+  <!-- Favicon and Meta -->
+  <meta name="theme-color" content="#dc2626" />
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="pulse-badge"><i class="fa-solid fa-bell"></i> Admissions Open 2026-27</span>
+        <span class="top-bar-text">Appear for <strong>K-SAT (Kinematics Scholarship Aptitude Test)</strong> & Win Up to 100% Scholarship!</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+919876543210" class="top-link"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+        <a href="mailto:admissions@kinematicsclasses.com" class="top-link"><i class="fa-solid fa-envelope"></i> info@kinematicsclasses.com</a>
+        <span class="badge-branch"><i class="fa-solid fa-location-dot"></i> City Campus</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#" class="brand-logo">
+        <div class="logo-symbol">
+          <i class="fa-solid fa-atom"></i>
+        </div>
+        <div class="logo-name-wrap">
+          <span class="logo-title">KINEMATICS</span>
+          <span class="logo-subtitle">CLASSES • LEARN • SOLVE • EXCEL</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#faculty" class="nav-link">Faculty</a>
+        <a href="#results" class="nav-link">Results & Ranks</a>
+        <a href="#ksat" class="nav-link">K-SAT Scholarship</a>
+        <a href="#study-material" class="nav-link">Resources</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="btn-demo-trigger" id="openDemoModalNav">
+          <i class="fa-solid fa-graduation-cap"></i> Free Demo Class
+        </button>
+        <a href="https://wa.me/919876543210?text=Hello%20Kinematics%20Classes%2C%20I%20want%20information%20regarding%20admissions." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header" title="Chat on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="logo-name-wrap">
+        <span class="logo-title">KINEMATICS</span>
+        <span class="logo-subtitle">COACHING INSTITUTE</span>
+      </div>
+      <button class="close-drawer-btn" id="closeDrawerBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="drawer-links">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About Us</a>
+      <a href="#courses" class="mobile-link">Courses & Programs</a>
+      <a href="#why-us" class="mobile-link">Why Kinematics?</a>
+      <a href="#faculty" class="mobile-link">Our Faculty</a>
+      <a href="#results" class="mobile-link">Hall of Fame</a>
+      <a href="#ksat" class="mobile-link">Scholarship Exam (K-SAT)</a>
+      <a href="#batches" class="mobile-link">Batch Schedules</a>
+      <a href="#contact" class="mobile-link">Contact & Admissions</a>
+    </div>
+    <div class="drawer-footer">
+      <button class="primary-btn w-full" id="openDemoModalMobile"><i class="fa-solid fa-calendar-check"></i> Book 2-Day Free Trial</button>
+      <a href="tel:+919876543210" class="secondary-btn w-full mt-2"><i class="fa-solid fa-phone"></i> Call Admission Counselor</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-grid"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <!-- Left Hero Text -->
+      <div class="hero-text-col">
+        <div class="badge-tag">
+          <span class="badge-dot"></span>
+          <span>India's Most Trusted Science & Engineering Mentorship</span>
+        </div>
+        <h1 class="hero-heading">
+          Concept Clarity Meets <span class="gradient-text">Top Exam Ranks.</span>
+        </h1>
+        <p class="hero-subtext">
+          At <strong>Kinematics Classes</strong>, we believe every difficult formula has an intuitive visual story. We prepare students for <strong>IIT-JEE (Main + Advanced)</strong>, <strong>NEET-UG</strong>, and <strong>CBSE/State Board Excellence (Classes 8th to 12th)</strong> through personalized mentorship, rigorous practice, and an IITian faculty panel.
+        </p>
+
+        <div class="hero-action-buttons">
+          <button class="primary-btn pulse-on-hover" id="heroBookDemoBtn">
+            <i class="fa-solid fa-bolt"></i> Book 2-Day Free Demo Class
+          </button>
+          <a href="#courses" class="secondary-btn">
+            <i class="fa-solid fa-book-open"></i> Explore Courses
+          </a>
+        </div>
+
+        <!-- Social Proof Stats -->
+        <div class="hero-stats-row">
+          <div class="stat-card">
+            <span class="stat-number">1,850+</span>
+            <span class="stat-label">IITs, NITs & AIIMS Selections</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">98.6%</span>
+            <span class="stat-label">Board Exam Success Rate</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">25:1</span>
+            <span class="stat-label">Small Batch Student Ratio</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">12+ Yrs</span>
+            <span class="stat-label">Proven Academic Pedigree</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Hero Interactive Registration Form -->
+      <div class="hero-form-col">
+        <div class="quick-enquiry-card">
+          <div class="form-card-badge">Limited Batch Seats</div>
+          <h3>Register for Free Counseling & Demo</h3>
+          <p>Get a 1-on-1 career consultation + 2 complimentary trial lectures with our senior faculty.</p>
+
+          <form id="heroCounselingForm" onsubmit="event.preventDefault(); handleCounselingSubmit('hero');">
+            <div class="input-group">
+              <label for="studentName"><i class="fa-solid fa-user"></i> Student Name *</label>
+              <input type="text" id="studentName" placeholder="e.g. Aryan Sharma" required />
+            </div>
+
+            <div class="form-row-2">
+              <div class="input-group">
+                <label for="studentPhone"><i class="fa-solid fa-phone"></i> Mobile / WhatsApp *</label>
+                <input type="tel" id="studentPhone" placeholder="10-digit number" pattern="[0-9]{10}" required />
+              </div>
+              <div class="input-group">
+                <label for="studentClass"><i class="fa-solid fa-school"></i> Target Class *</label>
+                <select id="studentClass" required>
+                  <option value="" disabled selected>Select Class</option>
+                  <option value="Class 8th Foundation">Class 8th</option>
+                  <option value="Class 9th Foundation">Class 9th</option>
+                  <option value="Class 10th Board + Pre-JEE/NEET">Class 10th</option>
+                  <option value="Class 11th (JEE / NEET)">Class 11th</option>
+                  <option value="Class 12th (JEE / NEET / Boards)">Class 12th</option>
+                  <option value="12th Pass / Dropper Batch">12th Pass / Repeater</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="targetGoal"><i class="fa-solid fa-bullseye"></i> Target Goal *</label>
+              <select id="targetGoal" required>
+                <option value="IIT-JEE (Main + Advanced)">IIT-JEE (Main & Advanced)</option>
+                <option value="NEET-UG (Medical Entrance)">NEET-UG (Medical Entrance)</option>
+                <option value="CBSE / State Boards (95%+ Target)">CBSE / State Boards (95%+ Target)</option>
+                <option value="Foundation & Olympiads (NTSE/IJSO)">Foundation & Olympiads</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label><i class="fa-solid fa-chalkboard-user"></i> Preferred Learning Mode</label>
+              <div class="mode-radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="learningMode" value="Classroom Offline" checked />
+                  <span>Classroom (Offline)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="learningMode" value="Interactive Live Hybrid" />
+                  <span>Hybrid / Live Online</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="primary-btn w-full btn-submit-enquiry">
+              <i class="fa-solid fa-paper-plane"></i> Book Free Demo & Counseling
+            </button>
+            <p class="privacy-note"><i class="fa-solid fa-lock"></i> 100% Confidential. No spam. You'll receive a confirmation SMS.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flash Features Banner -->
+  <section class="usp-bar">
+    <div class="container usp-wrapper">
+      <div class="usp-item">
+        <div class="usp-icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+        <div>
+          <h4>Top IITian & Medico Faculty</h4>
+          <p>Learn directly from mentors who cleared the toughest exams themselves.</p>
+        </div>
+      </div>
+      <div class="usp-item">
+        <div class="usp-icon"><i class="fa-solid fa-file-signature"></i></div>
+        <div>
+          <h4>Daily Practice Problems (DPP)</h4>
+          <p>Over 10,000+ curated questions categorized from easy to advanced level.</p>
+        </div>
+      </div>
+      <div class="usp-item">
+        <div class="usp-icon"><i class="fa-solid fa-headset"></i></div>
+        <div>
+          <h4>Personal 1-on-1 Doubt Desk</h4>
+          <p>Never sleep with a doubt. Dedicated daily doubt clearance sessions.</p>
+        </div>
+      </div>
+      <div class="usp-item">
+        <div class="usp-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div>
+          <h4>AI-Powered Mock Analytics</h4>
+          <p>Weekly all-India simulated tests with microscopic time and error analysis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-img-box">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000&auto=format&fit=crop" alt="Students learning in classroom" class="about-main-img" />
+          <div class="floating-badge-about">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <strong>#1 Rated Institute</strong>
+              <small>in City for Physics & Maths</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-tag"><i class="fa-solid fa-compass"></i> Why Kinematics Classes</div>
+        <h2 class="section-title">We Don't Make You Memorize. We Make You <span class="highlight-text">Visualize Physics & Science.</span></h2>
+        <p class="section-desc">
+          Named after <em>Kinematics</em> — the branch of physics that describes the motion of points, bodies, and systems — our philosophy is to keep students perpetually in forward motion toward academic excellence.
+        </p>
+        <p class="section-desc">
+          Founded in 2014 by a team of enthusiastic IIT graduates, <strong>Kinematics Classes</strong> has transformed from a humble classroom of 15 dreamers into a premier education landmark that consistently produces state toppers, single-digit AIRs in JEE Advanced, and 680+ scorers in NEET.
+        </p>
+
+        <div class="about-bullets">
+          <div class="bullet-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>Visual & Derivation-Driven Learning:</strong>
+              <span>Interactive simulations, real-life examples, and crystal-clear mathematical proofs.</span>
+            </div>
+          </div>
+          <div class="bullet-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>Strict Small Batch Limit (Max 25-30):</strong>
+              <span>No 200-student crowded auditoriums where backbenchers are forgotten.</span>
+            </div>
+          </div>
+          <div class="bullet-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>Parent-Mentor Transparency:</strong>
+              <span>Bi-weekly performance tracking reports & direct monthly parent-teacher conferences.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cta-row">
+          <a href="#faculty" class="secondary-btn"><i class="fa-solid fa-user-tie"></i> Meet Our Faculty</a>
+          <button class="primary-btn" onclick="openDownloadModal()"><i class="fa-solid fa-download"></i> Download Brochure (PDF)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses & Programs Section -->
+  <section class="courses-section" id="courses">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Our Comprehensive Programs</span>
+        <h2 class="section-title">Designed for Every Stage of Your Ambition</h2>
+        <p class="section-subtitle">
+          Choose from targeted courses meticulously designed for competitive rigor and board excellence.
+        </p>
+
+        <!-- Course Filter Tabs -->
+        <div class="course-filter-tabs" id="courseFilterTabs">
+          <button class="tab-btn active" data-filter="all">All Courses</button>
+          <button class="tab-btn" data-filter="jee"><i class="fa-solid fa-microchip"></i> IIT-JEE (Main + Adv)</button>
+          <button class="tab-btn" data-filter="neet"><i class="fa-solid fa-stethoscope"></i> NEET-UG (Medical)</button>
+          <button class="tab-btn" data-filter="foundation"><i class="fa-solid fa-seedling"></i> Foundations (8th–10th)</button>
+          <button class="tab-btn" data-filter="boards"><i class="fa-solid fa-book-bookmark"></i> 11th & 12th Boards</button>
+        </div>
+      </div>
+
+      <!-- Course Cards Grid -->
+      <div class="courses-grid" id="coursesGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- K-SAT Scholarship Banner Section -->
+  <section class="ksat-section" id="ksat">
+    <div class="container">
+      <div class="ksat-card">
+        <div class="ksat-info">
+          <span class="ksat-badge"><i class="fa-solid fa-star"></i> Annual Scholarship Exam</span>
+          <h2>K-SAT 2026: Kinematics Scholarship & Aptitude Test</h2>
+          <p>
+            Do not let financial constraints stand between you and your dream college. Appear for our national-level aptitude assessment and win up to <strong>100% Tuition Fee Waiver</strong> + Free Study Material & Mentorship.
+          </p>
+          <div class="ksat-details-grid">
+            <div class="ksat-detail-box">
+              <i class="fa-regular fa-calendar-days"></i>
+              <div>
+                <small>Upcoming Test Date</small>
+                <strong>Every Sunday (Online & Offline)</strong>
+              </div>
+            </div>
+            <div class="ksat-detail-box">
+              <i class="fa-solid fa-stopwatch"></i>
+              <div>
+                <small>Exam Duration</small>
+                <strong>90 Minutes (MCQ Based)</strong>
+              </div>
+            </div>
+            <div class="ksat-detail-box">
+              <i class="fa-solid fa-trophy"></i>
+              <div>
+                <small>Scholarship Pool</small>
+                <strong>₹50+ Lakhs Worth</strong>
+              </div>
+            </div>
+            <div class="ksat-detail-box">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <div>
+                <small>Registration Fee</small>
+                <strong class="green-text">FREE (Limited Time)</strong>
+              </div>
+            </div>
+          </div>
+          <div class="ksat-actions">
+            <button class="primary-btn btn-ksat" onclick="openKsatRegistration()"><i class="fa-solid fa-pencil"></i> Register for K-SAT Test</button>
+            <a href="#contact" class="secondary-btn btn-ksat-sec"><i class="fa-solid fa-file-lines"></i> View Syllabus & Sample Papers</a>
+          </div>
+        </div>
+
+        <div class="ksat-side-calc">
+          <div class="scholarship-calc-box">
+            <h4>Check Potential Scholarship</h4>
+            <p>Select your current score band to see approximate fee waiver:</p>
+            <div class="calc-slider-wrap">
+              <label for="marksRange">Expected Marks in 10th / 11th Boards or School: <strong id="sliderValue">90%</strong></label>
+              <input type="range" id="marksRange" min="60" max="100" value="90" step="5" />
+            </div>
+            <div class="scholarship-result-box">
+              <span>Estimated Scholarship Bracket:</span>
+              <h3 id="scholarshipOutput" class="scholarship-highlight">Up to 75% Fee Waiver</h3>
+              <small>Subject to K-SAT performance & personal interview.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Star Faculty Section -->
+  <section class="faculty-section" id="faculty">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-chalkboard-user"></i> The Brain Behind Kinematics</span>
+        <h2 class="section-title">Learn from Legendary Mentors</h2>
+        <p class="section-subtitle">
+          Our teachers are renowned educators, book authors, and alumni of top institutions who have dedicated their lives to student success.
+        </p>
+      </div>
+
+      <div class="faculty-grid" id="facultyGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Hall of Fame / Results Section -->
+  <section class="results-section" id="results">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-trophy"></i> Proven Track Record</span>
+        <h2 class="section-title">Hall of Fame: Our Recent Toppers</h2>
+        <p class="section-subtitle">
+          Their dedication, combined with Kinematics Classes' systematic framework, turned dreams into reality.
+        </p>
+      </div>
+
+      <div class="toppers-grid" id="toppersGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Testimonial Quote Banner -->
+      <div class="topper-quote-box">
+        <div class="quote-avatar">
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=200&auto=format&fit=crop" alt="Akash Verma" />
+        </div>
+        <div class="quote-text">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "Physics was my biggest nightmare until I joined Kinematics Classes in Class 11. The visual demos, breakdown of complex rotational dynamics, and round-the-clock doubt clearing helped me score 99.8 percentile in JEE Physics alone. I owe my IIT Delhi seat to the mentors here!"
+          </blockquote>
+          <div class="quote-author">
+            <strong>— Akash Verma</strong>, AIR 142 (JEE Advanced 2025), B.Tech Computer Science, IIT Delhi
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Batches & Schedule Interactive Lookup -->
+  <section class="batches-section" id="batches">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-calendar-days"></i> Academic Calendar 2026-27</span>
+        <h2 class="section-title">Upcoming Batch Timings & Schedules</h2>
+        <p class="section-subtitle">
+          Early bird batches fill quickly due to our strict 25-student cap per cohort.
+        </p>
+      </div>
+
+      <div class="batch-table-container">
+        <table class="batch-table">
+          <thead>
+            <tr>
+              <th>Target Exam / Course</th>
+              <th>Class / Target Year</th>
+              <th>Batch Days</th>
+              <th>Timings</th>
+              <th>Seats Left</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>JEE Pinnacle (2-Yr)</strong>
+                <span class="table-sub">Physics, Chemistry, Maths</span>
+              </td>
+              <td>Class 11th (Moving to 12th)</td>
+              <td>Mon, Wed, Fri + Sun Test</td>
+              <td>4:30 PM – 7:45 PM</td>
+              <td><span class="seat-badge low">Only 4 Seats</span></td>
+              <td><button class="table-cta-btn" onclick="quickApplyBatch('JEE Pinnacle 2-Yr')">Reserve Seat</button></td>
+            </tr>
+            <tr>
+              <td>
+                <strong>NEET Ascend (1-Yr Target)</strong>
+                <span class="table-sub">Physics, Chem, Botany, Zoology</span>
+              </td>
+              <td>Class 12th / Dropper Target</td>
+              <td>Mon to Sat (Daily Intensive)</td>
+              <td>9:00 AM – 2:00 PM</td>
+              <td><span class="seat-badge medium">7 Seats</span></td>
+              <td><button class="table-cta-btn" onclick="quickApplyBatch('NEET Ascend')">Reserve Seat</button></td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Foundation Catalyst</strong>
+                <span class="table-sub">Maths, Science & Mental Ability</span>
+              </td>
+              <td>Class 9th & 10th CBSE/ICSE</td>
+              <td>Tue, Thu, Sat</td>
+              <td>5:00 PM – 7:30 PM</td>
+              <td><span class="seat-badge safe">Open (9 Seats)</span></td>
+              <td><button class="table-cta-btn" onclick="quickApplyBatch('Foundation Catalyst')">Reserve Seat</button></td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Super 30 Droppers Batch</strong>
+                <span class="table-sub">Advanced Problem Solving</span>
+              </td>
+              <td>12th Passed (JEE 2027)</td>
+              <td>Daily Classes + Doubt Lab</td>
+              <td>8:30 AM – 1:30 PM</td>
+              <td><span class="seat-badge low">Only 3 Seats</span></td>
+              <td><button class="table-cta-btn" onclick="quickApplyBatch('Super 30 Droppers')">Reserve Seat</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Study Material & Formula Sheets Section -->
+  <section class="study-material-section" id="study-material">
+    <div class="container">
+      <div class="material-banner">
+        <div class="material-content">
+          <span class="section-tag-light"><i class="fa-solid fa-gift"></i> Student Resource Hub</span>
+          <h2>Free High-Yield Study Notes & Formula Handbooks</h2>
+          <p>
+            Download our celebrated handwritten formula sheets, NCERT chapter-wise mind maps, and past 10 years' solved question papers curated by our master faculty.
+          </p>
+          <div class="resource-tags">
+            <span class="tag-pill"><i class="fa-solid fa-file-pdf"></i> Mechanics Formula Handbook</span>
+            <span class="tag-pill"><i class="fa-solid fa-file-pdf"></i> Organic Chemistry Reaction Maps</span>
+            <span class="tag-pill"><i class="fa-solid fa-file-pdf"></i> Calculus Shortcut Guide</span>
+            <span class="tag-pill"><i class="fa-solid fa-file-pdf"></i> NEET Biology Diagram Bank</span>
+          </div>
+        </div>
+        <div class="material-action">
+          <button class="primary-btn btn-white" onclick="openDownloadModal()">
+            <i class="fa-solid fa-cloud-arrow-down"></i> Download Free PDF Kit
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faqs">
+    <div class="container faq-container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Clear Your Doubts</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Have queries about admissions, fees, batch sizes, or study material? We have answers.
+        </p>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Admission Center Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-wrapper">
+        <!-- Left Contact Info -->
+        <div class="contact-info-col">
+          <span class="section-tag"><i class="fa-solid fa-location-arrow"></i> Admissions Office</span>
+          <h2>Visit Our Campus or Get in Touch</h2>
+          <p>
+            Parents and students are welcome to visit our campus, observe a live classroom, review our library & doubt lab, and speak directly with academic directors.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-item">
+              <div class="icon-circle"><i class="fa-solid fa-building-columns"></i></div>
+              <div>
+                <strong>Head Campus Address:</strong>
+                <p>Kinematics Tower, 3rd Floor, Opp. Science College, Near Metro Pillar #142, Main University Road, City Center - 400001</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-circle"><i class="fa-solid fa-phone-volume"></i></div>
+              <div>
+                <strong>Counseling Helpline:</strong>
+                <p>+91 98765 43210 / +91 98765 43211</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-circle"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <div>
+                <strong>Email Address:</strong>
+                <p>admissions@kinematicsclasses.com / info@kinematicsclasses.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-circle"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Counseling & Desk Timings:</strong>
+                <p>Monday to Sunday: 8:00 AM – 8:00 PM (Open all 7 days)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-row">
+            <span>Follow Us:</span>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Right Quick Contact Form -->
+        <div class="contact-form-col">
+          <div class="form-wrapper">
+            <h3>Send an Admission Enquiry</h3>
+            <p>Fill out the form below and our chief academic counselor will call you within 2 working hours.</p>
+
+            <form id="contactAdmissionForm" onsubmit="event.preventDefault(); handleCounselingSubmit('contact');">
+              <div class="input-group">
+                <label for="contactName">Student's Full Name *</label>
+                <input type="text" id="contactName" required placeholder="e.g. Priyanshu Gupta" />
+              </div>
+
+              <div class="form-row-2">
+                <div class="input-group">
+                  <label for="contactPhone">Mobile Number *</label>
+                  <input type="tel" id="contactPhone" required placeholder="10-digit number" pattern="[0-9]{10}" />
+                </div>
+                <div class="input-group">
+                  <label for="contactEmail">Email Address (Optional)</label>
+                  <input type="email" id="contactEmail" placeholder="name@email.com" />
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="input-group">
+                  <label for="contactCourse">Select Program *</label>
+                  <select id="contactCourse" required>
+                    <option value="IIT-JEE (2-Year Integrated 11th)">IIT-JEE (11th Integrated)</option>
+                    <option value="IIT-JEE (1-Year Crash/Target 12th)">IIT-JEE (12th Target)</option>
+                    <option value="NEET-UG Medical Full Program">NEET-UG Medical Program</option>
+                    <option value="Foundation (Class 8th to 10th)">Foundation (8th-10th)</option>
+                    <option value="Super 30 Dropper Batch">Droppers Batch</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="contactCity">Your City / Area</label>
+                  <input type="text" id="contactCity" placeholder="e.g. North Zone / Main Town" />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="contactRemarks">Any Specific Questions or Target College?</label>
+                <textarea id="contactRemarks" rows="3" placeholder="Tell us about current school marks, specific doubts or requirements..."></textarea>
+              </div>
+
+              <button type="submit" class="primary-btn w-full btn-submit-form">
+                <i class="fa-solid fa-paper-plane"></i> Submit Admission Enquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-symbol"><i class="fa-solid fa-atom"></i></div>
+          <div class="logo-name-wrap">
+            <span class="logo-title">KINEMATICS</span>
+            <span class="logo-subtitle">CLASSES</span>
+          </div>
+        </div>
+        <p class="footer-text">
+          Kinematics Classes is dedicated to mentoring passionate students toward landmark successes in IIT-JEE, NEET, NTSE, Olympiads, and Board Examinations with unmatched concept clarity and personal mentorship.
+        </p>
+        <div class="accreditation-badges">
+          <span><i class="fa-solid fa-shield-halved"></i> ISO 9001:2015 Certified</span>
+          <span><i class="fa-solid fa-check-double"></i> Verified IITian Pedagogy</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Key Courses</h4>
+        <ul>
+          <li><a href="#courses" onclick="filterCourses('jee')">IIT-JEE Main & Advanced</a></li>
+          <li><a href="#courses" onclick="filterCourses('neet')">NEET-UG Medical Preps</a></li>
+          <li><a href="#courses" onclick="filterCourses('foundation')">Class 8th-10th Foundation</a></li>
+          <li><a href="#courses" onclick="filterCourses('boards')">Class 12th Board Booster</a></li>
+          <li><a href="#courses" onclick="filterCourses('jee')">Dropper / Target JEE Batch</a></li>
+          <li><a href="#ksat">K-SAT Scholarship Exam</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Student Resources</h4>
+        <ul>
+          <li><a href="#" onclick="openDownloadModal()">Free Formula Sheets</a></li>
+          <li><a href="#batches">Batch Timings 2026-27</a></li>
+          <li><a href="#results">Rankers & Wall of Fame</a></li>
+          <li><a href="#faqs">Frequently Asked Questions</a></li>
+          <li><a href="#about">Mentorship Methodology</a></li>
+          <li><a href="#" onclick="openDemoModal()">Book Free Demo Session</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Admission Desk</h4>
+        <p class="helpline-label">Direct Helpline Number:</p>
+        <a href="tel:+919876543210" class="footer-phone"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+        <p class="footer-hours"><i class="fa-regular fa-clock"></i> 8:00 AM – 8:00 PM (Everyday)</p>
+        <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Kinematics%20Classes" target="_blank" class="footer-wa-btn">
+          <i class="fa-brands fa-whatsapp"></i> Chat with Counselor
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 Kinematics Classes. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Student Code of Conduct</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Free Demo Class Booking -->
+  <div class="modal-backdrop" id="demoModalBackdrop"></div>
+  <div class="modal-card" id="demoModal">
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>Book 2-Day Free Trial Demo Class</h3>
+      </div>
+      <button class="close-modal-btn" id="closeDemoModalBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-sub">Experience our interactive teaching methodology firsthand before paying a single rupee. Attend real lectures with senior mentors.</p>
+      
+      <form id="demoModalForm" onsubmit="event.preventDefault(); handleDemoModalSubmit();">
+        <div class="input-group">
+          <label for="demoName">Student Full Name *</label>
+          <input type="text" id="demoName" required placeholder="e.g. Sneha Reddy" />
+        </div>
+        <div class="form-row-2">
+          <div class="input-group">
+            <label for="demoPhone">Parent / Student Mobile *</label>
+            <input type="tel" id="demoPhone" required placeholder="10-digit mobile" pattern="[0-9]{10}" />
+          </div>
+          <div class="input-group">
+            <label for="demoClass">Current Class *</label>
+            <select id="demoClass" required>
+              <option value="Class 8th">Class 8th</option>
+              <option value="Class 9th">Class 9th</option>
+              <option value="Class 10th">Class 10th</option>
+              <option value="Class 11th (Moving to 12th)" selected>Class 11th</option>
+              <option value="Class 12th">Class 12th</option>
+              <option value="12th Pass (Dropper)">12th Pass</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="input-group">
+            <label for="demoStream">Subject / Stream *</label>
+            <select id="demoStream" required>
+              <option value="Physics & Maths (JEE)">Physics & Maths (JEE)</option>
+              <option value="Physics & Biology (NEET)">Physics & Biology (NEET)</option>
+              <option value="Science & Maths (Class 8-10 Foundation)">Foundation (8th-10th)</option>
+              <option value="Full Comprehensive Package">Full All-Subjects</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="demoSlot">Preferred Slot *</label>
+            <select id="demoSlot" required>
+              <option value="This Saturday (Offline Campus)">This Saturday (Offline)</option>
+              <option value="This Sunday (Offline Campus)">This Sunday (Offline)</option>
+              <option value="Weekday Evening (4:30 PM)">Weekday Evening (4:30 PM)</option>
+              <option value="Online Live Interactive">Online Live Stream</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="primary-btn w-full btn-confirm-demo">
+          <i class="fa-solid fa-circle-check"></i> Confirm Demo Seat (Instant Pass)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Download Brochure / Notes -->
+  <div class="modal-backdrop" id="downloadModalBackdrop"></div>
+  <div class="modal-card" id="downloadModal">
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <i class="fa-solid fa-cloud-arrow-down"></i>
+        <h3>Download Free Study Kit & Brochure</h3>
+      </div>
+      <button class="close-modal-btn" id="closeDownloadModalBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-sub">Enter your details to instantly receive the PDF download link on WhatsApp & your email.</p>
+      
+      <form id="downloadForm" onsubmit="event.preventDefault(); handleDownloadSubmit();">
+        <div class="input-group">
+          <label for="dlName">Your Name *</label>
+          <input type="text" id="dlName" required placeholder="e.g. Rohan Mehra" />
+        </div>
+        <div class="input-group">
+          <label for="dlPhone">WhatsApp Number (to send PDF link) *</label>
+          <input type="tel" id="dlPhone" required placeholder="10-digit WhatsApp number" pattern="[0-9]{10}" />
+        </div>
+        <div class="input-group">
+          <label for="dlKit">Select Study Resource *</label>
+          <select id="dlKit" required>
+            <option value="Kinematics Classes Complete Brochure 2026-27">Full Institute Brochure & Fee Structure</option>
+            <option value="IIT-JEE Physics High-Yield Formula Handbook">IIT-JEE Physics Formula Book</option>
+            <option value="NEET Biology Complete Mind-Map Booklet">NEET Biology Complete Mind-Maps</option>
+            <option value="Class 10th Science & Maths Board Master Guide">Class 10th Board Master Revision Guide</option>
+          </select>
+        </div>
+
+        <button type="submit" class="primary-btn w-full">
+          <i class="fa-solid fa-download"></i> Get Instant Download Link
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Notification Alert Modal -->
+  <div class="modal-backdrop" id="successModalBackdrop"></div>
+  <div class="modal-card success-popup" id="successModal">
+    <div class="success-icon-wrap">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <h3 id="successModalTitle">Registration Successful!</h3>
+    <p id="successModalMessage">Thank you for connecting with Kinematics Classes. Our academic counselor will call you shortly.</p>
+    <div class="modal-success-actions">
+      <a href="#" class="primary-btn whatsapp-cta-btn" id="successWhatsAppLink" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> Continue on WhatsApp
+      </a>
+      <button class="secondary-btn" id="closeSuccessBtn">Close Window</button>
+    </div>
+  </div>
+
+  <!-- Floating Sticky Action Buttons for Mobile & Desktop -->
+  <div class="floating-contact-dock">
+    <a href="https://wa.me/919876543210?text=Hi%20Kinematics%20Classes%2C%20I%20am%20interested%20in%20admission%20details." target="_blank" rel="noopener noreferrer" class="dock-btn dock-whatsapp" title="WhatsApp Enquiry">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="dock-tooltip">Chat with Mentor</span>
+    </a>
+    <a href="tel:+919876543210" class="dock-btn dock-call" title="Call Us Directly">
+      <i class="fa-solid fa-phone"></i>
+      <span class="dock-tooltip">Call Admission Desk</span>
+    </a>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-info"></i>
+    <span id="toastMessage">Notification message</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
+
